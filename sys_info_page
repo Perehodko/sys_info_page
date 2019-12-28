@@ -2,12 +2,13 @@
 
 # Программа вывода страницы с информацией о системе
 
+title="System Information Report"
 echo "<HTML>
 	<HEAD>
-		<TITLE>Page Title</TITLE>
+		<TITLE>$title</TITLE>
 	</HEAD>
 	<BODY>
-		Page body.
+		<H1>$title</H1>
 	</BODY>
 </HTML>"
 
