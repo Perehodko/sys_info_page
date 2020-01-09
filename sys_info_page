@@ -16,14 +16,17 @@ report_uptime () {
 
 report_disk_space () {
 	cat <<- _EOF_
-		<H2>System Space Utilization</H2>
-		<PRE>$(df -h /home/*)</PRE>
+		<H2>Disk Space Utilization</H2>
+		<PRE>$(df -h)</PRE>
 		_EOF_
 	return
 }
 
 report_home_space () {
-	echo "Function report_home_space executed."
+    cat <<- _EOF_
+        <H2>Home Space Utilization</H2>
+        <PRE>$(du -sh /home/*)</PRE>
+_EOF_
 	return
 }
 
