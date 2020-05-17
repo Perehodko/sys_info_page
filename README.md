@@ -10,3 +10,7 @@ chmod u+x sys_info_page
 ```
 ./sys_info_page > sys_info_page.html
 ```
+3. Открыть файл в браузере
+```
+firefox sys_info_page.html
+```
